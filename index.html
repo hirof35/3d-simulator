@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:,">
+    <title>3D 立体図形シミュレーター</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #1a1a1a; }
+        #canvas { width: 100vw; height: 100vh; display: block; }
+        #info {
+            position: absolute; top: 10px; left: 10px; color: white;
+            font-family: sans-serif; background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">Node.js + Three.js 3D Simulator</div>
+    <div style="font-size: 11px; color: #aaa; margin-top: 5px;">操作: クリック選択 / W:移動 / E:回転 / R:拡大 / C:複製追加 / Del:削除</div>
+    <canvas id="canvas"></canvas>
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
